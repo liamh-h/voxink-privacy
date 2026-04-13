@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your VoxInk Account</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #111827; color: #e5e7eb; min-height: 100vh; }
+.container { max-width: 640px; margin: 0 auto; padding: 48px 24px 80px; }
+.logo { color: #22C55E; font-size: 18px; font-weight: 700; margin-bottom: 40px; }
+h1 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+.subtitle { font-size: 16px; color: #9ca3af; line-height: 1.7; margin-bottom: 40px; }
+.steps { margin-bottom: 40px; }
+.steps h2 { font-size: 18px; color: #fff; margin-bottom: 20px; }
+.step { display: flex; gap: 16px; margin-bottom: 24px; }
+.step-num { flex-shrink: 0; width: 32px; height: 32px; background: #22C55E; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; }
+.step-content h3 { font-size: 15px; color: #fff; margin-bottom: 4px; }
+.step-content p { font-size: 14px; color: #9ca3af; line-height: 1.6; }
+.step-content code { background: #1f2937; padding: 2px 8px; border-radius: 4px; font-size: 13px; color: #d1d5db; }
+.btn { display: inline-block; background: #22C55E; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-size: 16px; font-weight: 600; margin-bottom: 40px; transition: background 0.2s; }
+.btn:hover { background: #16a34a; }
+.info { background: #1f2937; border-radius: 10px; padding: 20px; margin-bottom: 40px; }
+.info h3 { font-size: 15px; color: #fff; margin-bottom: 8px; }
+.info p { font-size: 14px; color: #9ca3af; line-height: 1.6; }
+.info ul { padding-left: 20px; margin-top: 8px; }
+.info li { font-size: 14px; color: #9ca3af; line-height: 1.8; }
+.contact { font-size: 14px; color: #6b7280; border-top: 1px solid #1f2937; padding-top: 24px; }
+.contact a { color: #22C55E; text-decoration: none; }
+.back { display: inline-block; margin-bottom: 24px; font-size: 14px; color: #6b7280; text-decoration: none; }
+.back:hover { color: #9ca3af; }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">VoxInk</div>
+
+    <a href="../" class="back">&larr; Back to Privacy Policy</a>
+
+    <h1>Delete Your Account</h1>
+    <p class="subtitle">VoxInk uses Google Sign-In and does not store any personal data on our servers. Your voice and text are processed in real-time and immediately discarded. Deleting your account means revoking VoxInk's access to your Google account.</p>
+
+    <div class="steps">
+        <h2>How to delete your account</h2>
+
+        <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+                <h3>Revoke Google access</h3>
+                <p>Go to <code>Google Account &rarr; Security &rarr; Third-party apps with account access</code>. Find <strong>VoxInk</strong> and click <strong>Remove Access</strong>.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+                <h3>Uninstall the app</h3>
+                <p>Uninstall VoxInk from your device. This removes all local data including cached preferences and login state.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+                <h3>Done</h3>
+                <p>Your account is fully deleted. Since we don't store any personal data, voice recordings, or text on our servers, there is nothing left to remove.</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://myaccount.google.com/permissions" class="btn" target="_blank" rel="noopener">Manage Google Account Permissions &rarr;</a>
+
+    <div class="info">
+        <h3>What data does VoxInk store?</h3>
+        <p>VoxInk stores minimal data for service operation:</p>
+        <ul>
+            <li><strong>On your device:</strong> Login state, app preferences (encrypted)</li>
+            <li><strong>On our server:</strong> Hashed user ID + aggregate usage seconds (no personal data)</li>
+            <li><strong>Never stored:</strong> Voice audio, transcribed text, messages, or any content</li>
+        </ul>
+        <p style="margin-top: 12px;">Uninstalling the app removes all on-device data. The server-side hashed ID and usage counter cannot be linked back to your identity.</p>
+    </div>
+
+    <div class="contact">
+        <p>Need help? Contact us at <a href="mailto:support@voxink.ai">support@voxink.ai</a></p>
+    </div>
+</div>
+</body>
+</html>
